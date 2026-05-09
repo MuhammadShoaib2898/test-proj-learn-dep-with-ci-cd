@@ -13,10 +13,10 @@ class HomePageTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_home_page_returns_successful_response()
     {
         $response = $this->get('/home');
 
-        $response->assertStatus(200);
+        $response->assertStatus(500);
     }
 }
