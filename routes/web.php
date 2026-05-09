@@ -16,22 +16,3 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/users', function () {
-
-    $users = [
-        [
-            'name' => 'Ali',
-            'email' => 'ali@example.com'
-        ],
-        [
-            'name' => 'Sara',
-            'email' => 'sara@example.com'
-        ],
-        [
-            'name' => 'John',
-            'email' => 'john@example.com'
-        ],
-    ];
-
-    return view('users', compact('users'));
-});
